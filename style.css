@@ -1,0 +1,294 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:100px;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+    border-bottom: 1px #BF5837 solid;
+    z-index: 10000;
+}
+
+.header_logo {
+    width:386px;
+}
+
+.header_menu {
+    width:100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0 5px;
+    font-size: 1.2rem;
+    width: 70%;
+    float: right;
+    padding-right: 10px;
+}
+
+li {
+    padding: 10px 15px ;
+    border-radius: 10px 0;
+}
+
+li:hover {
+    background-color: #BF5837;
+    color:#FFFFFF;
+}
+
+a:visited, a:active {
+    color: #000000;
+}
+a:hover {
+    color:#FFFFFF
+}
+
+a {
+    color:#000000;
+    text-decoration: none;
+}
+
+main {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 100px;
+}
+
+.main_title, .main_analyse, .main_recommandation, .main_rapport {
+    margin: 0;
+    width: 100%;
+    padding: 30px 0 100px 0;
+    background-color: #BF5837;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color:#FFFFFF;
+    text-decoration: underline;
+}
+
+.main_title-paragraphe {
+    padding: 10px 0;
+    margin: 0 50px;
+    font-size: 1.2rem;
+    text-align: justify;
+    color:#FFFFFF;
+}
+
+.main_analyse {
+    background-color: #FFFFFF;
+    color:#575757;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    color: #333333;
+}
+
+.main_analyse-entete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom:50px;
+}
+
+.main_analyse-partie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width:25%;
+    padding: 10px;
+}
+
+h3 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color:#333333;
+}
+
+.analyse_icon {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 15px 0;
+    font-size:3.75rem;
+}
+
+.main_analyse-paragraphe {
+    padding: 10px 0;
+    margin: 0 50px;
+    font-size: 1.2rem;
+    text-align: justify;
+    min-height: 200px;
+}
+
+.main_analyse-lien {
+    text-align: center;
+    color:#333333;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.main_analyse-lien:hover {
+    border-radius: 10px 0;
+    background-color: #BF5837;
+}
+
+.main_analyse_details, 
+, {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+h4 {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color:#FFFFFF; 
+    background-color: #BF5837;
+    border-radius: 20px 20px 0 0;
+    font-size: 1.5rem;
+}
+
+h4:hover {
+    text-decoration: underline;
+}
+
+.main_analyse_detail_tableau {
+    padding: 20px;
+    margin: 0;
+    width: 100% - 2px;
+    border: 1px #BF5837 solid;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main_analyse_detail_element {
+    padding: 20px;
+    margin: 20px 0;
+    width: 240px; /*25%*/
+    border-radius: 10px;
+    box-shadow: slategray 1px 1px 5px -2px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.analyse_detail_icon-probleme, 
+.analyse_detail_icon-bonnepratique,
+.analyse_detail_icon-explication,
+.analyse_detail_icon-action,
+.analyse_detail_icon-reference {
+    padding: 5px ;
+    margin: 5px;
+    font-size:1.5rem;
+    font-weight: 600;
+    color: #bd0303;
+    font-family: FontAwesome;
+}
+
+.analyse_detail_icon-bonnepratique {
+    color: #006400;
+    font-size:1.3rem;
+}
+
+.analyse_detail_icon-explication {
+    color: #333333;
+    font-weight: initial;
+    font-size:1.3rem;
+}
+
+.analyse_detail_icon-action {
+    color: #575757;
+    font-weight: initial;
+    font-size:1.3rem;
+}
+
+.analyse_detail_icon-reference {
+    color: royalblue;
+    font-weight: initial;
+    font-size:1.3rem;
+}
+.analyse_detail-lien {
+    color:royalblue;
+    text-decoration: none;
+}
+
+.analyse_detail-lien:hover, .analyse_detail-lien:visited, .analyse_detail-lien:active {
+    color:royalblue;
+    text-decoration: underline;
+}
+
+.white_space {
+    height:60px;
+}
+
+/*****************************************************************************/
+/*******   DIFFERENTES ANALYSES   ********************************************/
+.main_analyse_accessibilite {
+    background-color: #00ffff;
+    height: 600px;
+    margin-bottom: 50px;
+}
+.main_analyse_performance {
+    background-color: #ff00ff;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.main_recommandation {
+    /* background-color: #00ff00; */
+}
+
+/**************************************************************************/
+/*******   DIFFERENTESS ETAPES   ******************************************/
+
+
+.main_rapport {
+    background-color: #0000ff;
+}
+
