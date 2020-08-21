@@ -174,8 +174,7 @@ h3 {
     background-color: #BF5837;
 }
 
-.main_analyse_details, 
-, {
+.main_analyse_details {
     width: 100%;
     margin-bottom: 50px;
 }
@@ -281,7 +280,7 @@ h4:hover {
 }
 
 .main_recommandation {
-    /* background-color: #00ff00; */
+    background-color: #00ff00;
 }
 
 /**************************************************************************/
