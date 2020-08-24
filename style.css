@@ -111,7 +111,8 @@ h1 {
     color:#FFFFFF;
 }
 
-.main_analyse {
+.main_analyse, 
+.main_recommandation {
     background-color: #FFFFFF;
     color:#575757;
     width: 100%;
@@ -123,7 +124,8 @@ h2 {
     color: #333333;
 }
 
-.main_analyse-entete {
+.main_analyse-entete, 
+.main_recommandation-entete {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -131,7 +133,8 @@ h2 {
     margin-bottom:50px;
 }
 
-.main_analyse-partie {
+.main_analyse-partie,
+.main_recommandation-partie {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,14 +150,16 @@ h3 {
     color:#333333;
 }
 
-.analyse_icon {
+.analyse_icon,
+.recommandation_icon {
     display: flex;
     justify-content: center;
     padding: 5px 0 15px 0;
     font-size:3.75rem;
 }
 
-.main_analyse-paragraphe {
+.main_analyse-paragraphe,
+.main_recommandation-paragraphe {
     padding: 10px 0;
     margin: 0 50px;
     font-size: 1.2rem;
@@ -162,19 +167,22 @@ h3 {
     min-height: 200px;
 }
 
-.main_analyse-lien {
+.main_analyse-lien,
+.main_recommandation-lien {
     text-align: center;
     color:#333333;
     padding: 10px;
     font-size: 1.2rem;
 }
 
-.main_analyse-lien:hover {
+.main_analyse-lien:hover,
+.main_recommandation-lien:hover {
     border-radius: 10px 0;
     background-color: #BF5837;
 }
 
-.main_analyse_details {
+.main_analyse_detail,
+.main_recommandation_detail {
     width: 100%;
     margin-bottom: 50px;
 }
@@ -194,7 +202,8 @@ h4:hover {
     text-decoration: underline;
 }
 
-.main_analyse_detail_tableau {
+.main_analyse_detail_tableau,
+.main_recommandation_detail_tableau {
     padding: 20px;
     margin: 0;
     width: 100% - 2px;
@@ -206,7 +215,8 @@ h4:hover {
     justify-content: space-around;
 }
 
-.main_analyse_detail_element {
+.main_analyse_detail_element,
+.main_recommandation_detail_element {
     padding: 20px;
     margin: 20px 0;
     width: 240px; /*25%*/
@@ -214,14 +224,15 @@ h4:hover {
     box-shadow: slategray 1px 1px 5px -2px;
     display: flex;
     flex-direction: column;
-
 }
 
 .analyse_detail_icon-probleme, 
 .analyse_detail_icon-bonnepratique,
 .analyse_detail_icon-explication,
 .analyse_detail_icon-action,
-.analyse_detail_icon-reference {
+.analyse_detail_icon-reference,
+.recommandation_detail_icon-bonnepratique,
+.main_recommandation_detail-paragraphe {
     padding: 5px ;
     margin: 5px;
     font-size:1.5rem;
@@ -230,12 +241,14 @@ h4:hover {
     font-family: FontAwesome;
 }
 
-.analyse_detail_icon-bonnepratique {
+.analyse_detail_icon-bonnepratique,
+.recommandation_detail_icon-bonnepratique {
     color: #006400;
     font-size:1.3rem;
 }
 
-.analyse_detail_icon-explication {
+.analyse_detail_icon-explication,
+.main_recommandation_detail-paragraphe {
     color: #333333;
     font-weight: initial;
     font-size:1.3rem;
@@ -257,7 +270,9 @@ h4:hover {
     text-decoration: none;
 }
 
-.analyse_detail-lien:hover, .analyse_detail-lien:visited, .analyse_detail-lien:active {
+.analyse_detail-lien:hover, 
+.analyse_detail-lien:visited, 
+.analyse_detail-lien:active {
     color:royalblue;
     text-decoration: underline;
 }
@@ -266,31 +281,13 @@ h4:hover {
     height:60px;
 }
 
-/*****************************************************************************/
-/*******   DIFFERENTES ANALYSES   ********************************************/
-.main_analyse_accessibilite {
-    background-color: #00ffff;
-    height: 600px;
-    margin-bottom: 50px;
-}
-.main_analyse_performance {
-    background-color: #ff00ff;
-    height: 600px;
-    margin-bottom: 50px;
-}
-
-
-/**************************************************************************/
-/*******   REPRENDRE ICI LE TRAVAIL   *************************************/
-/*******   LISTE DE RECOMMANDATIONS   *************************************/
-
-
-.main_recommandation {
-    background-color: #FFFFFF;
-    color:#575757;
+.main_recommandation_detail_element {
     width: 100%;
 }
 
+.main_recommandation_detail-paragraphe {
+    text-align: justify;
+}
 /**************************************************************************/
 /*******   DIFFERENTESS ETAPES   ******************************************/
 
