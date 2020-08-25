@@ -112,7 +112,8 @@ h1 {
 }
 
 .main_analyse, 
-.main_recommandation {
+.main_recommandation,
+.main_rapport {
     background-color: #FFFFFF;
     color:#575757;
     width: 100%;
@@ -125,7 +126,8 @@ h2 {
 }
 
 .main_analyse-entete, 
-.main_recommandation-entete {
+.main_recommandation-entete,
+.main_rapport-entete {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -134,7 +136,8 @@ h2 {
 }
 
 .main_analyse-partie,
-.main_recommandation-partie {
+.main_recommandation-partie,
+.main_rapport-partie {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,7 +154,8 @@ h3 {
 }
 
 .analyse_icon,
-.recommandation_icon {
+.recommandation_icon,
+.rapport_icon {
     display: flex;
     justify-content: center;
     padding: 5px 0 15px 0;
@@ -159,7 +163,8 @@ h3 {
 }
 
 .main_analyse-paragraphe,
-.main_recommandation-paragraphe {
+.main_recommandation-paragraphe,
+.main_rapport-paragraphe {
     padding: 10px 0;
     margin: 0 50px;
     font-size: 1.2rem;
@@ -168,7 +173,9 @@ h3 {
 }
 
 .main_analyse-lien,
-.main_recommandation-lien {
+.main_recommandation-lien,
+.main_rapport-lien,
+.footer-lien {
     text-align: center;
     color:#333333;
     padding: 10px;
@@ -176,13 +183,16 @@ h3 {
 }
 
 .main_analyse-lien:hover,
-.main_recommandation-lien:hover {
+.main_recommandation-lien:hover,
+.main_rapport-lien:hover,
+.footer-lien:hover {
     border-radius: 10px 0;
     background-color: #BF5837;
 }
 
 .main_analyse_detail,
-.main_recommandation_detail {
+.main_recommandation_detail,
+.main_rapport_detail {
     width: 100%;
     margin-bottom: 50px;
 }
@@ -203,7 +213,8 @@ h4:hover {
 }
 
 .main_analyse_detail_tableau,
-.main_recommandation_detail_tableau {
+.main_recommandation_detail_tableau,
+.main_rapport_detail_tableau {
     padding: 20px;
     margin: 0;
     width: 100% - 2px;
@@ -216,7 +227,8 @@ h4:hover {
 }
 
 .main_analyse_detail_element,
-.main_recommandation_detail_element {
+.main_recommandation_detail_element,
+.main_rapport_detail_element {
     padding: 20px;
     margin: 20px 0;
     width: 240px; /*25%*/
@@ -232,7 +244,9 @@ h4:hover {
 .analyse_detail_icon-action,
 .analyse_detail_icon-reference,
 .recommandation_detail_icon-bonnepratique,
-.main_recommandation_detail-paragraphe {
+.main_recommandation_detail-paragraphe,
+.rapport_detail_icon-bonnepratique,
+.main_rapport_detail-paragraphe {
     padding: 5px ;
     margin: 5px;
     font-size:1.5rem;
@@ -242,13 +256,16 @@ h4:hover {
 }
 
 .analyse_detail_icon-bonnepratique,
-.recommandation_detail_icon-bonnepratique {
+.recommandation_detail_icon-bonnepratique,
+.rapport_detail_icon-bonnepratique {
     color: #006400;
     font-size:1.3rem;
 }
 
 .analyse_detail_icon-explication,
-.main_recommandation_detail-paragraphe {
+.main_recommandation_detail-paragraphe,
+.main_rapport_detail-paragraphe,
+.footer-parapgraphe {
     color: #333333;
     font-weight: initial;
     font-size:1.3rem;
@@ -281,18 +298,62 @@ h4:hover {
     height:60px;
 }
 
-.main_recommandation_detail_element {
+.main_recommandation_detail_element,
+.main_rapport_detail_element {
     width: 100%;
 }
 
-.main_recommandation_detail-paragraphe {
+.main_recommandation_detail-paragraphe,
+.main_rapport_detail-paragraphe {
     text-align: justify;
 }
-/**************************************************************************/
-/*******   DIFFERENTESS ETAPES   ******************************************/
 
-
-.main_rapport {
-    background-color: #0000ff;
+footer {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:30px;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    border-top: 1px #BF5837 solid;
+    z-index: 10000;
 }
 
+.footer-paragraphe,
+.footer-lien {
+    font-size: 0.75rem;
+}
+
+.footer-lien {
+    padding: 5px;
+}
+
+/**************************************************************************/
+/*******   MEDIA QUERIES   ************************************************/
+
+@media only screen and (max-width: 768px) {
+    header, main, footer {
+        width: 100%;
+    }
+    
+    ul {
+        padding: 0;
+        width:100%;
+    }       
+}
+
+@media only screen and (max-width: 425px) {  
+    header,.footer-copyright{display:none}
+    main{top:0;}
+    h1{font-size:2rem;}
+    .main_analyse-entete,
+    .main_recommandation-entete,
+    .main_rapport-entete{flex-direction: column;}
+    h1, h2, .main_analyse-partie, .main_recommandation-partie, .main_rapport-partie {width: 90%;text-align: center;}   
+}
