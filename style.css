@@ -351,6 +351,10 @@ footer {
     ul {
         padding: 0;
         width:100%;
+    }
+    
+    .footer-paragraphe {
+        padding: 0 5px;
     }       
 }
 
@@ -398,9 +402,5 @@ footer {
     
     .main_analyse_detail_element {
         width: 100%;
-    }
-
-    .footer-paragraphe {
-        padding-left: 5px;
     }
 }
