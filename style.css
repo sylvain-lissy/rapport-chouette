@@ -32,10 +32,13 @@ header {
 
 .header_logo {
     width:386px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header_menu {
-    width:100%;
+    width:100%;   
 }
 
 ul {
@@ -61,7 +64,8 @@ li:hover {
     color:#FFFFFF;
 }
 
-a:visited, a:active {
+a:visited, 
+a:active {
     color: #000000;
 }
 a:hover {
@@ -86,7 +90,10 @@ main {
     top: 100px;
 }
 
-.main_title, .main_analyse, .main_recommandation, .main_rapport {
+.main_title, 
+.main_analyse, 
+.main_recommandation, 
+.main_rapport {
     margin: 0;
     width: 100%;
     padding: 30px 0 100px 0;
@@ -231,7 +238,7 @@ h4:hover {
 .main_rapport_detail_element {
     padding: 20px;
     margin: 20px 0;
-    width: 240px; /*25%*/
+    width: 240px;
     border-radius: 10px;
     box-shadow: slategray 1px 1px 5px -2px;
     display: flex;
@@ -334,11 +341,10 @@ footer {
     padding: 5px;
 }
 
-/**************************************************************************/
-/*******   MEDIA QUERIES   ************************************************/
-
 @media only screen and (max-width: 768px) {
-    header, main, footer {
+    header, 
+    main, 
+    footer {
         width: 100%;
     }
     
@@ -349,11 +355,52 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {  
-    header,.footer-copyright{display:none}
-    main{top:0;}
-    h1{font-size:2rem;}
-    .main_analyse-entete,
-    .main_recommandation-entete,
-    .main_rapport-entete{flex-direction: column;}
-    h1, h2, .main_analyse-partie, .main_recommandation-partie, .main_rapport-partie {width: 90%;text-align: center;}   
+    .footer-copyright {
+        display:none;
+    }
+
+    ul {
+        flex-direction: column;
+        padding-right:15px;
+        align-items: flex-end;
+    }
+    
+    li {
+        padding:5px 10px;
+    }
+    
+    .main_title-paragraphe {
+        margin: 0 10px;
+    }
+    
+    h1 {
+        font-size:2rem;
+    }
+    
+    h2 {
+        font-size:1.6rem;
+    }
+    
+    .main_analyse-entete, 
+    .main_recommandation-entete, 
+    .main_rapport-entete{
+        flex-direction: column;
+    }
+    
+    h1, 
+    h2, 
+    .main_analyse-partie, 
+    .main_recommandation-partie, 
+    .main_rapport-partie {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .main_analyse_detail_element {
+        width: 100%;
+    }
+
+    .footer-paragraphe {
+        padding-left: 5px;
+    }
 }

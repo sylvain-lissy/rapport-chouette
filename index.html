@@ -7,8 +7,8 @@
         content="Analyse et rapport du site de la chouette agence - Analyse SEO/Accessibilité/Performance, Recommandations, Rapport avant/après et Axe(s) d'amélioration">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/et-line.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/et-line.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Analyse et rapport du site de la chouette agence</title>
 </head>
@@ -16,7 +16,11 @@
 <body id="hautdepage">
     <header>
         <div class="header_logo">
-            <img src="img/logo.png"/>
+            <picture>
+                <source media="(max-width: 425px)" srcset="img/logo_mobile.png">
+                <source srcset="img/logo.png">
+                <img src="img/logo.png" alt="">
+            </picture>
         </div>
         <div class="header_menu">
             <nav>
@@ -24,7 +28,6 @@
                     <li><a href="#analyse">Analyse</a></li>
                     <li><a href="#recommandation">Recommandations</a></li>
                     <li><a href="#rapport">Rapport</a></li>
-                    <!-- <li><a href="#amelioration ">Amélioration</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -66,9 +69,9 @@
                     <span class="et-icon-edit analyse_icon"></span>
                     <h3>Accessibilité</h3>
                     <p class="main_analayse_paragraphe">
-                        L’accessibilité, c’est rendre le contenu d’un site Internet accessible à tous 
-                        les utilisateurs, quel que soit son matériel , sa structure réseau, sa langue 
-                        maternelle, sa culture, sa localisation géographique, son âge, ou ses aptitudes 
+                        L’accessibilité, c’est rendre le contenu d’un site Internet accessible à tous
+                        les utilisateurs, quel que soit son matériel , sa structure réseau, sa langue
+                        maternelle, sa culture, sa localisation géographique, son âge, ou ses aptitudes
                         physiques ou mentales.
                     </p>
                     <a href="#analyse_accessibilite" class="main_analyse-lien">Voir l'analyse accessibilité</a>
@@ -77,9 +80,9 @@
                     <span class="et-icon-presentation analyse_icon"></span>
                     <h3>Performances</h3>
                     <p class="main_analayse_paragraphe">
-                        Les performances web sont un domaine extrêmement large. Cela peut aller de la rapidité 
-                        du serveur tout en passant par des intégrations HTML/CSS de qualité, l’optimisation des 
-                        images, etc... Les visiteurs apprécieront que vos pages s’affichent le plus rapidement 
+                        Les performances web sont un domaine extrêmement large. Cela peut aller de la rapidité
+                        du serveur tout en passant par des intégrations HTML/CSS de qualité, l’optimisation des
+                        images, etc... Les visiteurs apprécieront que vos pages s’affichent le plus rapidement
                         possible.
                     </p>
                     <a href="#analyse_performance" class="main_analyse-lien">Voir l'analyse performance</a>
@@ -91,109 +94,167 @@
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Mot clés non pertinents</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Mot clés pertinents</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Les mots clés doivent s'accorder au contenu du site</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Faire une recherche de mots clés pertinents</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="">A RENSEIGNER</a></span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Les mots clés doivent s'accorder
+                            au contenu du site</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Faire une recherche de mots clés
+                            pertinents</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="">A RENSEIGNER</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Titre de page vide</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Avoir un titre de page</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Le titre de la page la définit en tout premier point</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Le titre de la page la définit en
+                            tout premier point</span>
                         <span class="fa-check-circle analyse_detail_icon-action"> Mettre un titre de page</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-8-6-1">Tanaguru Critère 8.6.1</a></span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-8-6-1">Tanaguru Critère
+                                8.6.1</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Balise HTML sans langue</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Balise HTML avec langue</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> L'attribut lang permet aux robots de mieux localiser le site</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> L'attribut lang permet aux robots
+                            de mieux localiser le site</span>
                         <span class="fa-check-circle analyse_detail_icon-action"> Mettre un attribut lang valide</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-8-4-1">Tanaguru Critère 8.4.1</a>  </span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-8-4-1">Tanaguru Critère
+                                8.4.1</a> </span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Liens redondant</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Eviter de trop répéter</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Trop de lien menant à une même page desserve l'indexation</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Trop de lien menant à une même
+                            page desserve l'indexation</span>
                         <span class="fa-check-circle analyse_detail_icon-action"> Regrouper les liens en un seul</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="https://support.google.com/webmasters/answer/66356?hl=fr&ref_topic=6001971">Support Google</a></span>
-                    </div>                    
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="https://support.google.com/webmasters/answer/66356?hl=fr&ref_topic=6001971">Support
+                                Google</a></span>
+                    </div>
                     <div class="main_analyse_detail_element">
-                        <span class="fa-minus-circle analyse_detail_icon-probleme"> Taille des images trop grandes</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Reduire la taille des images au contenant</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Si l'image est trop grande, elle sera plus longue à charger et à redimmensionner en CSS</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Redimmensioner les images et les compresser pour gagner en temps de chargement</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="">A RENSIGNER</a></span>
+                        <span class="fa-minus-circle analyse_detail_icon-probleme"> Taille des images trop
+                            grandes</span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Reduire la taille des images au
+                            contenant</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Si l'image est trop grande, elle
+                            sera plus longue à charger et à redimmensionner en CSS</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Redimmensioner les images et les
+                            compresser pour gagner en temps de chargement</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="">A RENSIGNER</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Liens CSS et JS mauvais</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Appeler les bons fichiers</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Rien ne sert d'appeler des fichiers inexistants</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Mettre à jour les appels CSS et JS</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="">A RENSEIGNER</a></span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Rien ne sert d'appeler des
+                            fichiers inexistants</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Mettre à jour les appels CSS et
+                            JS</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="">A RENSEIGNER</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> CSS et JS non minifier</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Minifier CSS et JS</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Ceci permettra de réduire la taille des fichiers et d'accelerer le chargement de la page</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Ceci permettra de réduire la
+                            taille des fichiers et d'accelerer le chargement de la page</span>
                         <span class="fa-check-circle analyse_detail_icon-action"> Minifier le CSS et JS</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="https://web.dev/render-blocking-resources/?utm_source=lighthouse&utm_medium=unknown">Web.dev Minifier</a></span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="https://web.dev/render-blocking-resources/?utm_source=lighthouse&utm_medium=unknown">Web.dev
+                                Minifier</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> JS non async ou defer</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Differer le chargement des scripts JS</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Differer le chargement permettra d'afficher la page plus vite sans avoir à attendre le chargement complet des scripts JS</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Mettre à jour les appel CSS et JS</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/script">MDN - Scripts</a></span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Differer le chargement des
+                            scripts JS</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Differer le chargement permettra
+                            d'afficher la page plus vite sans avoir à attendre le chargement complet des scripts
+                            JS</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Mettre à jour les appel CSS et
+                            JS</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/script">MDN -
+                                Scripts</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> meta description vide</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Remplir la méta description</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> La description servira à google pour l'afficher sur la page de recherche</span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Remplir la méta
+                            description</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> La description servira à google
+                            pour l'afficher sur la page de recherche</span>
                         <span class="fa-check-circle analyse_detail_icon-action"> Remplir la méta description</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="https://www.semrush.com/blog/what-not-to-do-when-writing-a-meta-description/">Semrush Meta description</a></span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="https://www.semrush.com/blog/what-not-to-do-when-writing-a-meta-description/">Semrush
+                                Meta description</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Format d'image BMP</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Utilisé le format JPG ou PNG</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Permettra d'avoir des images plus légère et plus rapide à charger</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Convertir les images au bon format</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="https://web.dev/fast/#optimize-your-images">Web.dev Images</a></span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Utilisé le format JPG ou
+                            PNG</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Permettra d'avoir des images plus
+                            légère et plus rapide à charger</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Convertir les images au bon
+                            format</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="https://web.dev/fast/#optimize-your-images">Web.dev Images</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> FavIcon mauvais format</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Utilisé le format PNG ou ICO</span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Utilisé le format PNG ou
+                            ICO</span>
                         <span class="fa-times-circle analyse_detail_icon-explication"> Cohérence avec la balise</span>
                         <span class="fa-check-circle analyse_detail_icon-action"> Convertir au bon format</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="">A RENSIGNER</a></span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="">A RENSIGNER</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Div class keyword</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Ne pas le faire</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Une réptition de mot clé en tout petit caractère illisible à l'oeil se verra quand meme par les robot qui penaliseront l'indexation du site</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Une réptition de mot clé en tout
+                            petit caractère illisible à l'oeil se verra quand meme par les robot qui penaliseront
+                            l'indexation du site</span>
                         <span class="fa-check-circle analyse_detail_icon-action"> retirer ces div</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="https://support.google.com/webmasters/answer/66353">Support Google - Texte caché</a></span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="https://support.google.com/webmasters/answer/66353">Support Google - Texte
+                                caché</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Attribut alt des images</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Texte pertinent</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> La balise alt doit décrire l'image et non répéter les mots clés</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Réécrire les attribut alt des images de façon cohérente et si l'image est un logo ou de la déco en mettre une vide <alt=""></alt></span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-1-2-1">Tanaguru Critère 1.2.1</a></span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> La balise alt doit décrire
+                            l'image et non répéter les mots clés</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Réécrire les attribut alt des images
+                            de façon cohérente et si l'image est un logo ou de la déco en mettre une vide <alt="">
+                                </alt></span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-1-2-1">Tanaguru Critère
+                                1.2.1</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Liens du footer</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Ne pas en abuser</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Trop de liens et surtout non pertinent avec le metier sont à bannir pour un meilleur SEO</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Supprimer les liens partenaires inutile et non cohérent</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="https://support.google.com/webmasters/answer/66356?hl=fr&ref_topic=6001971">Support Google - Liens</a></span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Trop de liens et surtout non
+                            pertinent avec le metier sont à bannir pour un meilleur SEO</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Supprimer les liens partenaires
+                            inutile et non cohérent</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="https://support.google.com/webmasters/answer/66356?hl=fr&ref_topic=6001971">Support
+                                Google - Liens</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
-                        <span class="fa-minus-circle analyse_detail_icon-probleme"> Ne passe pas le validateur W3C</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Doit passer la validation du W3C</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Le W3C fournit les standards du web, on se doit de les respecter</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Corriger les ereurs fournit par le validateur</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="https://openweb.eu.org/articles/pourquoi_standards">Openweb - Validation W3C</a></span>
+                        <span class="fa-minus-circle analyse_detail_icon-probleme"> Ne passe pas le validateur
+                            W3C</span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Doit passer la validation du
+                            W3C</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Le W3C fournit les standards du
+                            web, on se doit de les respecter</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Corriger les ereurs fournit par le
+                            validateur</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="https://openweb.eu.org/articles/pourquoi_standards">Openweb - Validation
+                                W3C</a></span>
                     </div>
-                </div> 
+                </div>
             </article>
             <div class="white_space"></div>
             <article id="analyse_accessibilite" class="main_analyse_detail">
@@ -201,55 +262,91 @@
                 <div class="main_analyse_detail_tableau">
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Text de liens vide</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Mettre un descriptif du lien ou les refaire si ce sont des images</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Un lien doit contenir un texte pour le décrire et le rendre pertinent</span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Mettre un descriptif du lien ou
+                            les refaire si ce sont des images</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Un lien doit contenir un texte
+                            pour le décrire et le rendre pertinent</span>
                         <span class="fa-check-circle analyse_detail_icon-action"> Mettre à jour les liens</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-6-5-1"> Tanaguru Critère 6.5.1</a></span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-6-5-1"> Tanaguru Critère
+                                6.5.1</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Head-mapping incorrect</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Head-mapping correct</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Le head mapping definit la structure de la page</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Mettre en place un head-mapping cohérent</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-9-1-2"> Tanaguru Critère 9.1.2</a></span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Le head mapping definit la
+                            structure de la page</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Mettre en place un head-mapping
+                            cohérent</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-9-1-2"> Tanaguru Critère
+                                9.1.2</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> Contraste peu élevé</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Avoir un bon contraste de couleur</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Si les couleurs de texte et de fond sont trop similaire alors on peut avoir du mal à lire le texte</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Changer les couleurs pour avoir un meilleur contraste et donc une meilleure lisibilité</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-3-3-1">  Tanaguru Critère 3.3.1</a></span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Avoir un bon contraste de
+                            couleur</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Si les couleurs de texte et de
+                            fond sont trop similaire alors on peut avoir du mal à lire le texte</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Changer les couleurs pour avoir un
+                            meilleur contraste et donc une meilleure lisibilité</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-3-3-1"> Tanaguru Critère
+                                3.3.1</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
-                        <span class="fa-minus-circle analyse_detail_icon-probleme"> Les input du form non labelisé</span>
+                        <span class="fa-minus-circle analyse_detail_icon-probleme"> Les input du form non
+                            labelisé</span>
                         <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Definir les input du form</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Le form sera mal interpreter par un lecteur d'ecran</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Definir un label à chaque input du form</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-1-8-1">  Tanaguru Critère 1.8.1</a></span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Le form sera mal interpreter par
+                            un lecteur d'ecran</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Definir un label à chaque input du
+                            form</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-1-8-1"> Tanaguru Critère
+                                1.8.1</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
-                        <span class="fa-minus-circle analyse_detail_icon-probleme"> Image citation contient du text</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Eviter le texte dans les images</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Un texte contenu dans une image ne sera pas lu par un lecteur d'écran</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Ecrire le texte en attribut alt ou dans ce cas mettre le text en html pure vu qu'il s'agit d'un texte sur fond blanc</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-1-6-1">  Tanaguru Critère 1.6.1</a></span>
+                        <span class="fa-minus-circle analyse_detail_icon-probleme"> Image citation contient du
+                            text</span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Eviter le texte dans les
+                            images</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Un texte contenu dans une image
+                            ne sera pas lu par un lecteur d'écran</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Ecrire le texte en attribut alt ou
+                            dans ce cas mettre le text en html pure vu qu'il s'agit d'un texte sur fond blanc</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-1-6-1"> Tanaguru Critère
+                                1.6.1</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
-                        <span class="fa-minus-circle analyse_detail_icon-probleme"> Absence de la totalité des balises sémantiques</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Utiliser toute les balises sémantiques</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Elles permettent de structurer la page avec un en-tête (header), une zone de navigation (nav), une zone de contenu principale (main) et un pied de page (footer)</span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Mettre en place les balise sémantiques manquantes</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-9-2-1">  Tanaguru Critère 9.2.1</a></span>
+                        <span class="fa-minus-circle analyse_detail_icon-probleme"> Absence de la totalité des balises
+                            sémantiques</span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> Utiliser toute les balises
+                            sémantiques</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Elles permettent de structurer la
+                            page avec un en-tête (header), une zone de navigation (nav), une zone de contenu principale
+                            (main) et un pied de page (footer)</span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Mettre en place les balise sémantiques
+                            manquantes</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-9-2-1"> Tanaguru Critère
+                                9.2.1</a></span>
                     </div>
                     <div class="main_analyse_detail_element">
                         <span class="fa-minus-circle analyse_detail_icon-probleme"> plusieur unité de mesures</span>
-                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> utiliser une seule unité de mesure variable</span>
-                        <span class="fa-times-circle analyse_detail_icon-explication"> Utilisé des unités fixe ne permet pas un bon affichage au zoom </span>
-                        <span class="fa-check-circle analyse_detail_icon-action"> Unifier les mesures de taille en utilisant plutot une unité variable plutoôt qu'absolue</span>
-                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien" href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-10-4-2">  Tanaguru Critère 10.4.2</a></span>
+                        <span class="fa-plus-circle analyse_detail_icon-bonnepratique"> utiliser une seule unité de
+                            mesure variable</span>
+                        <span class="fa-times-circle analyse_detail_icon-explication"> Utilisé des unités fixe ne permet
+                            pas un bon affichage au zoom </span>
+                        <span class="fa-check-circle analyse_detail_icon-action"> Unifier les mesures de taille en
+                            utilisant plutot une unité variable plutoôt qu'absolue</span>
+                        <span class="fa-info-circle analyse_detail_icon-reference"> <a class="analyse_detail-lien"
+                                href="http://rgaa.tanaguru.com/rgaa3-criteres.html#test-10-4-2"> Tanaguru Critère
+                                10.4.2</a></span>
                     </div>
                 </div>
-            </article>            
+            </article>
             <div class="white_space"></div>
             <article id="analyse_performance" class="main_analyse_detail">
                 <h4>Analyse Performances:</h4>
@@ -264,12 +361,8 @@
                     <div class="main_analyse_detail_element">Perf 08</div>
                     <div class="main_analyse_detail_element">Perf 09</div>
                 </div>
-            </article>            
+            </article>
         </section>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-------------------------------------- AUTRES BLOCS // RECOMMANDATIONS ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
         <section id="recommandation" class="main_recommandation">
             <h2>Liste de recommandations à mettre en place</h2>
             <article class="main_recommandation-entete">
@@ -287,66 +380,80 @@
                     <span class="et-icon-edit recommandation_icon"></span>
                     <h3>Accessibilité</h3>
                     <p class="main_analayse_paragraphe">
-                        Les optimisations sur l'accessibilité sont souvent simple  à mettre en place si le travail
-                        des designers à été fait en amont pour prendre en compte les critères d'accésibilité éligibile 
+                        Les optimisations sur l'accessibilité sont souvent simple à mettre en place si le travail
+                        des designers à été fait en amont pour prendre en compte les critères d'accésibilité éligibile
                         au standard WCAG du futur site.
                     </p>
-                    <a href="#recommandation_accessibilite" class="main_recommandation-lien">Voir les recommandations accessibilité</a>
+                    <a href="#recommandation_accessibilite" class="main_recommandation-lien">Voir les recommandations
+                        accessibilité</a>
                 </div>
                 <div class="main_recommandation-partie">
                     <span class="et-icon-presentation recommandation_icon"></span>
                     <h3>Performances</h3>
                     <p class="main_analayse_paragraphe">
                         Les optimisations liées aux performances sont souvent plus compliqué à mettre en place quand
-                        il va s'agir de l'infrastructure (paramétrage du serveur). L'autre travail sera principalement 
+                        il va s'agir de l'infrastructure (paramétrage du serveur). L'autre travail sera principalement
                         axé sur le travail des images du site.
                     </p>
-                    <a href="#recommandation_performance" class="main_recommandation-lien">Voir les recommandations performance</a>
+                    <a href="#recommandation_performance" class="main_recommandation-lien">Voir les recommandations
+                        performance</a>
                 </div>
             </article>
             <article id="recommandation_seo" class="main_recommandation_detail">
                 <h4>Recommandations pour le SEO:</h4>
                 <div class="main_recommandation_detail_tableau">
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations SEO 01</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations SEO
+                            01</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations SEO 02</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations SEO
+                            02</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations SEO 03</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations SEO
+                            03</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations SEO 04</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations SEO
+                            04</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-info-circle recommandation_detail_icon-bonnepratique">  Recommandations SEO 05</span>
+                        <span class="fa-info-circle recommandation_detail_icon-bonnepratique"> Recommandations SEO
+                            05</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations SEO 06</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations SEO
+                            06</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                 </div>
@@ -356,45 +463,57 @@
                 <h4>Recommandations sur l'accessibilité:</h4>
                 <div class="main_recommandation_detail_tableau">
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations Accessibilité 01</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Accessibilité 01</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations Accessibilité 02</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Accessibilité 02</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations Accessibilité 03</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Accessibilité 03</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations Accessibilité 04</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Accessibilité 04</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-info-circle recommandation_detail_icon-bonnepratique">  Recommandations Accessibilité 05</span>
+                        <span class="fa-info-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Accessibilité 05</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations Accessibilité 06</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Accessibilité 06</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                 </div>
@@ -404,238 +523,276 @@
                 <h4>Recommandations sur les performances:</h4>
                 <div class="main_recommandation_detail_tableau">
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations Performances 01</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Performances 01</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations Performances 02</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Performances 02</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations Performances 03</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Performances 03</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations Performances 04</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Performances 04</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-info-circle recommandation_detail_icon-bonnepratique">  Recommandations Performances 05</span>
+                        <span class="fa-info-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Performances 05</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                     <div class="main_recommandation_detail_element">
-                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique">  Recommandations Performances 06</span>
+                        <span class="fa-plus-circle recommandation_detail_icon-bonnepratique"> Recommandations
+                            Performances 06</span>
                         <span class="main_recommandation_detail-paragraphe">
                             Détail de cette recommandation sur ces lignes de texte dans ce paragraphe !<br>
-                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette recommandation.
+                            Nous y trouverons la ou les raisons qui nous dise pourquoi mettre en place cette
+                            recommandation.
                         </span>
                     </div>
                 </div>
             </article>
         </section>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-------------------------------------- AUTRES BLOCS // RAPPORT --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
-<section id="rapport" class="main_rapport">
-    <h2>Rapport d'analyse avant/après :</h2>
-    <article class="main_rapport-entete">
-        <div class="main_rapport-partie">
-            <span class="et-icon-browser rapport_icon"></span>
-            <h3>SEO</h3>
-            <p class="main_rapport_paragraphe">
-                Les optimisations SEO misent en place permettront de pouvoir remonter dans les résultats de recherche
-                sur les différents moteurs. Le site aura une meilleure visibilité et sera plus pertinent quand à son
-                contenu. Ce sera un gain évident autant pour l'entreprise que pour les visiteurs.
-            </p>
-            <a href="#rapport_seo" class="main_rapport-lien">Voir le rapport SEO</a>
-        </div>
-        <div class="main_rapport-partie">
-            <span class="et-icon-edit rapport_icon"></span>
-            <h3>Accessibilité</h3>
-            <p class="main_analayse_paragraphe">
-                Les optimisations sur l'accessibilité permettront -quand à elles- à pouvoir cibler un panel de visiteurs
-                beaucoup plus large voir même de nouveaux. Les changements apportés amélioreront grandement la lecture et
-                la navigation pour les personnes ayant des difficultés.
-            </p>
-            <a href="#rapport_accessibilite" class="main_rapport-lien">Voir le rapport d'accessibilité</a>
-        </div>
-        <div class="main_rapport-partie">
-            <span class="et-icon-presentation rapport_icon"></span>
-            <h3>Performances</h3>
-            <p class="main_analayse_paragraphe">
-                Les optimisations liées aux performances sont souvent plus succintes. Elles auront permis de charger le site
-                plus rapidement par le biais de la réduction du poids des fichiers, l'utilisation des caches . Tout ceci afin 
-                de limiter le taux de rebond.
-            </p>
-            <a href="#rapport_performance" class="main_rapport-lien">Voir le rapport performance</a>
-        </div>
-    </article>
-    <article id="rapport_seo" class="main_rapport_detail">
-        <h4>Rapport avant/après pour le SEO:</h4>
-        <div class="main_rapport_detail_tableau">
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> Rapport avant/après SEO 01</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  Rapport avant/après SEO 02</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  Rapport avant/après SEO 03</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  Rapport avant/après SEO 04</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-info-circle rapport_detail_icon-bonnepratique">  Rapport avant/après SEO 05</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  Rapport avant/après SEO 06</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-        </div>
-    </article>
-    <div class="white_space"></div>
-    <article id="rapport_accessibilite" class="main_rapport_detail">
-        <h4>rapports sur l'accessibilité:</h4>
-        <div class="main_rapport_detail_tableau">
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Accessibilité 01</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  rapports Accessibilité 02</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  rapports Accessibilité 03</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  rapports Accessibilité 04</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-info-circle rapport_detail_icon-bonnepratique">  rapports Accessibilité 05</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  rapports Accessibilité 06</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-        </div>
-    </article>
-    <div class="white_space"></div>
-    <article id="rapport_performance" class="main_rapport_detail">
-        <h4>rapports sur les performances:</h4>
-        <div class="main_rapport_detail_tableau">
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Performances 01</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  rapports Performances 02</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  rapports Performances 03</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  rapports Performances 04</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-info-circle rapport_detail_icon-bonnepratique">  rapports Performances 05</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-            <div class="main_rapport_detail_element">
-                <span class="fa-plus-circle rapport_detail_icon-bonnepratique">  rapports Performances 06</span>
-                <span class="main_rapport_detail-paragraphe">
-                    Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
-                    L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont été utilisé !
-                </span>
-            </div>
-        </div>
-    </article>
-</section>
+        <section id="rapport" class="main_rapport">
+            <h2>Rapport d'analyse avant/après :</h2>
+            <article class="main_rapport-entete">
+                <div class="main_rapport-partie">
+                    <span class="et-icon-browser rapport_icon"></span>
+                    <h3>SEO</h3>
+                    <p class="main_rapport_paragraphe">
+                        Les optimisations SEO misent en place permettront de pouvoir remonter dans les résultats de
+                        recherche
+                        sur les différents moteurs. Le site aura une meilleure visibilité et sera plus pertinent quand à
+                        son
+                        contenu. Ce sera un gain évident autant pour l'entreprise que pour les visiteurs.
+                    </p>
+                    <a href="#rapport_seo" class="main_rapport-lien">Voir le rapport SEO</a>
+                </div>
+                <div class="main_rapport-partie">
+                    <span class="et-icon-edit rapport_icon"></span>
+                    <h3>Accessibilité</h3>
+                    <p class="main_analayse_paragraphe">
+                        Les optimisations sur l'accessibilité permettront -quand à elles- à pouvoir cibler un panel de
+                        visiteurs
+                        beaucoup plus large voir même de nouveaux. Les changements apportés amélioreront grandement la
+                        lecture et
+                        la navigation pour les personnes ayant des difficultés.
+                    </p>
+                    <a href="#rapport_accessibilite" class="main_rapport-lien">Voir le rapport d'accessibilité</a>
+                </div>
+                <div class="main_rapport-partie">
+                    <span class="et-icon-presentation rapport_icon"></span>
+                    <h3>Performances</h3>
+                    <p class="main_analayse_paragraphe">
+                        Les optimisations liées aux performances sont souvent plus succintes. Elles auront permis de
+                        charger le site
+                        plus rapidement par le biais de la réduction du poids des fichiers, l'utilisation des caches .
+                        Tout ceci afin
+                        de limiter le taux de rebond.
+                    </p>
+                    <a href="#rapport_performance" class="main_rapport-lien">Voir le rapport performance</a>
+                </div>
+            </article>
+            <article id="rapport_seo" class="main_rapport_detail">
+                <h4>Rapport avant/après pour le SEO:</h4>
+                <div class="main_rapport_detail_tableau">
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> Rapport avant/après SEO
+                            01</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> Rapport avant/après SEO
+                            02</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> Rapport avant/après SEO
+                            03</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> Rapport avant/après SEO
+                            04</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-info-circle rapport_detail_icon-bonnepratique"> Rapport avant/après SEO
+                            05</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> Rapport avant/après SEO
+                            06</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <div class="white_space"></div>
+            <article id="rapport_accessibilite" class="main_rapport_detail">
+                <h4>rapports sur l'accessibilité:</h4>
+                <div class="main_rapport_detail_tableau">
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Accessibilité 01</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Accessibilité 02</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Accessibilité 03</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Accessibilité 04</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-info-circle rapport_detail_icon-bonnepratique"> rapports Accessibilité 05</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Accessibilité 06</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <div class="white_space"></div>
+            <article id="rapport_performance" class="main_rapport_detail">
+                <h4>rapports sur les performances:</h4>
+                <div class="main_rapport_detail_tableau">
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Performances 01</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Performances 02</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Performances 03</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Performances 04</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-info-circle rapport_detail_icon-bonnepratique"> rapports Performances 05</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                    <div class="main_rapport_detail_element">
+                        <span class="fa-plus-circle rapport_detail_icon-bonnepratique"> rapports Performances 06</span>
+                        <span class="main_rapport_detail-paragraphe">
+                            Rapport avant/après détaillé sur ce point précis avec images à l'appui.<br>
+                            L'utilisation d'outil de test SEO, de test d'accéssibilité et de test de performances ont
+                            été utilisé !
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-------------------------------------- AUTRES BLOCS // FOOTER ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
     <footer>
-        <p class="footer-paragraphe footer-copyright">Copyright 2020 - Sylvain LISSY - Rapport d'analayses et optimisations du site de la chouette agence.</p>
+        <p class="footer-paragraphe">
+            Copyright 2020 - Sylvain LISSY 
+            <span class="footer-copyright">- Rapport d'analayses et   optimisations du site de la chouette agence.</span>
+        </p>
         <p class="footer-paragraphe"><a class="footer-lien" href="#hautdepage">Haut de page</a></p>
     </footer>
 
