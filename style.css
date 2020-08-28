@@ -392,7 +392,7 @@ legend {
 }
 
 .span_underline {
-    text-decoration: underline;
+    border-bottom: 1px #FFFFFF solid;
     font-weight: bold;
     font-style: italic;
 }
@@ -406,7 +406,6 @@ legend {
 
 .main_performance_detail_element > p,
 .main_rapport_detail_element > p {
-    /* text-decoration: underline; */
     border-bottom: 1px #BF5837 solid;
 }
 
