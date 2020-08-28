@@ -117,7 +117,7 @@ h1 {
 }
 
 .main_title-paragraphe,
-.main_conclusion {
+.main_conclusion-paragraphe {
     padding: 10px 0;
     margin: 0 50px;
     font-size: 1.2rem;
@@ -137,15 +137,14 @@ h2 {
     text-decoration: underline;
     color: #333333;
 }
-.main_conclusion > h2,
-.main_conclusion-partie > h3 {
+
+.main_conclusion > h2 {
     color:#FFFFFF;
 }
 
 .main_analyse-entete, 
 .main_recommandation-entete,
-.main_rapport-entete,
-.main_conclusion-entete {
+.main_rapport-entete {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -153,25 +152,15 @@ h2 {
     margin-bottom:50px;
 }
 
-.main_conclusion-entete {
-    flex-direction: column;
-}
-
 .main_analyse-partie,
 .main_recommandation-partie,
-.main_rapport-partie,
-.main_conclusion-partie {
+.main_rapport-partie {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     width:25%;
     padding: 10px;
-}
-
-.main_conclusion-partie {
-    max-width: max-content;
-    padding: 0;
 }
 
 h3 {
@@ -183,8 +172,7 @@ h3 {
 
 .analyse_icon,
 .recommandation_icon,
-.rapport_icon,
-.conclusion_icon {
+.rapport_icon {
     display: flex;
     justify-content: center;
     padding: 5px 0 15px 0;
@@ -193,8 +181,7 @@ h3 {
 
 .main_analyse-paragraphe,
 .main_recommandation-paragraphe,
-.main_rapport-paragraphe,
-.main_conclusion-paragraphe {
+.main_rapport-paragraphe {
     padding: 10px 0;
     margin: 0 50px;
     font-size: 1.2rem;
@@ -389,6 +376,26 @@ figcaption {
     border-radius: 0 0 7px 7px;
 }
 
+fieldset {
+    width: 90%;
+    margin: 10px;
+    border: 1px #FFFFFF solid;
+    border-radius: 10px;
+}
+
+legend {
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+.span_underline {
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
 
 /**********************************************************************************************************************************/
 /**********************************************************************************************************************************/
@@ -473,7 +480,8 @@ footer {
         padding:5px 10px;
     }
     
-    .main_title-paragraphe {
+    .main_title-paragraphe,
+    .main_conclusion-paragraphe {
         margin: 0 10px;
     }
     
